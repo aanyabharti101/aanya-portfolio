@@ -1,4 +1,4 @@
-# Aanya Bharti: Personal Portfolio
+# Aanya Bharti: Personal Portfolio 🙌
 
 This is the complete local copy of your portfolio, including the latest introduction, NASTT scholar label, research entries, conference section, and community logos.
 
