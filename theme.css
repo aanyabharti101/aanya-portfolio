@@ -1,0 +1,86 @@
+/* Theme controls and the portfolio's optional plum-toned dark palette. */
+:root { color-scheme: light; }
+html[data-theme="dark"] {
+  color-scheme: dark;
+  --ink: #f4ece7;
+  --paper: #201b24;
+  --muted: #bfb1be;
+  --line: #4a3d4c;
+}
+.navlinks { margin-left: auto; }
+.nav-tools { display: flex; align-items: center; gap: 12px; margin-left: 20px; }
+.theme-toggle {
+  display: inline-flex; align-items: center; justify-content: center;
+  width: 40px; height: 40px; flex-shrink: 0;
+  background: transparent; color: var(--ink); border: 1px solid var(--line);
+  border-radius: 50%; padding: 9px;
+}
+.theme-toggle:hover { background: #eadee0; }
+.theme-toggle svg { width: 19px; height: 19px; }
+.theme-sun, html[data-theme="dark"] .theme-moon { display: none; }
+html[data-theme="dark"] .theme-sun { display: block; }
+html[data-theme="dark"] header { background: #201b24ed; }
+html[data-theme="dark"] ::selection { background: #795344; color: #fff7ef; }
+html[data-theme="dark"] a:focus-visible,
+html[data-theme="dark"] button:focus-visible,
+html[data-theme="dark"] summary:focus-visible { outline-color: #f1b39d; }
+html[data-theme="dark"] .logo span,
+html[data-theme="dark"] .hero h1 em,
+html[data-theme="dark"] .about-intro h2 em,
+html[data-theme="dark"] .small-star,
+html[data-theme="dark"] .research-num,
+html[data-theme="dark"] .research-ahead .eyebrow { color: #eba68f; }
+html[data-theme="dark"] .navlinks a:hover,
+html[data-theme="dark"] .repo-link:hover { color: #f1b39d; }
+html[data-theme="dark"] .theme-toggle:hover,
+html[data-theme="dark"] .button:hover { background: #3b2e3e; }
+html[data-theme="dark"] .button.primary:hover { background: #e7b49f; }
+html[data-theme="dark"] .filter.active { color: var(--paper); }
+html[data-theme="dark"] .tag,
+html[data-theme="dark"] .nav-contact,
+html[data-theme="dark"] .repo-link,
+html[data-theme="dark"] .project summary,
+html[data-theme="dark"] .research-description summary { border-color: #766073; }
+html[data-theme="dark"] .research { background: #2d2530; }
+html[data-theme="dark"] .research-row,
+html[data-theme="dark"] .research-ahead { border-color: var(--line); }
+html[data-theme="dark"] .research-status,
+html[data-theme="dark"] .conference-role { background: #4d3835; color: #f1c6ae; }
+html[data-theme="dark"] .research-status.proposed,
+html[data-theme="dark"] .conference-role.presenter { background: #44354f; color: #dfc8ef; }
+html[data-theme="dark"] .research-row .research-pending { color: #c8adc2; }
+html[data-theme="dark"] .skills span { background: #3b2e3e; }
+/* Keep illustration text legible on the original pastel project artwork. */
+html[data-theme="dark"] .hero-art,
+html[data-theme="dark"] .project-visual { --ink: #392834; --muted: #796e75; color: #392834; }
+html[data-theme="dark"] .code { color: #d7ceda; }
+html[data-theme="dark"] .community-mark img { mix-blend-mode: normal; }
+html[data-theme="dark"] .community-mark img[src$="girls-who-code.svg"] {
+  filter: brightness(1.8) saturate(.65);
+}
+html[data-theme="dark"] .community-mark img[src$="uml.svg"] {
+  filter: drop-shadow(0 0 1px #fff) drop-shadow(0 0 1px #fff);
+}
+html[data-theme="dark"] .contact {
+  background: #382839; color: #faf7f2; border: 1px solid #59415a;
+}
+html[data-theme="dark"] .contact .button {
+  background: #faf7f2; border-color: #faf7f2; color: #392834;
+}
+html[data-theme="dark"] .contact .button:hover { background: #efcfbf; }
+@media (max-width: 780px) {
+  .nav-tools { margin-left: auto; }
+  .menu { display: block; }
+  .navlinks {
+    display: none; position: absolute; top: 86px; left: 0; right: 0;
+    margin: 0; padding: 20px 24px; background: var(--paper);
+    border-bottom: 1px solid var(--line); flex-direction: column;
+    align-items: stretch; gap: 19px;
+  }
+  .navlinks.open { display: flex; }
+  .nav-contact { width: fit-content; }
+}
+@media (max-width: 640px) {
+  .navlinks { top: 70px; }
+  .theme-toggle { width: 36px; height: 36px; padding: 8px; }
+}
