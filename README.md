@@ -1,4 +1,4 @@
-# Aanya Bharti — Personal Portfolio
+# Aanya Bharti: Personal Portfolio
 
 This is the complete local copy of your portfolio, including the latest introduction, NASTT scholar label, research entries, conference section, and community logos.
 
@@ -26,7 +26,6 @@ For a quick preview, you can also double-click `index.html`. Serving it on local
 
 Save your changes, then refresh your browser. Keep `index.html` and the `assets` folder together.
 
-No npm installation, build step, framework, backend, or ChatGPT login is required locally.
 
 Google Fonts loads the two web fonts when you are online. If you are offline, the site uses fallback fonts; included logos and screenshots remain available. Email, GitHub, LinkedIn, and external demo links open their normal destinations.
 
