@@ -1,6 +1,6 @@
-# hi, i’m aanya :)
+# hi, i’m aanya :)😊
 
-This is my personal portfolio, a little space for the things I’m building, researching, and figuring out along the way.
+This is my personal portfolio, a little space for the things I’m building, researching, and figuring out along the way. 
 
 **[take a look around ↗](https://aanyabharti101.github.io/aanya-portfolio/)**
 
@@ -21,4 +21,4 @@ Built with HTML, CSS, and JavaScript, and hosted on GitHub Pages.
 
 [LinkedIn](https://www.linkedin.com/in/aanyabharti2/) · [Email](mailto:aanya_bharti@student.uml.edu)
 
-thanks for stopping by :)
+thanks for stopping by :)✨
